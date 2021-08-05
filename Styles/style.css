@@ -30,6 +30,10 @@ nav {
   background-color: #333;
   overflow: hidden;
 }
+nav a:hover {
+  background-color: wheat;
+  color: black;
+}
 section {
   text-align: center;
   padding-top: 40px;
