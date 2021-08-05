@@ -45,3 +45,6 @@ section {
   padding-top: 40px;
   height: 100vh;
 }
+section h5 {
+  margin: 0px 130px;
+}
