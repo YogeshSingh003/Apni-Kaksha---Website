@@ -45,6 +45,7 @@ nav a:hover {
 section {
   text-align: center;
   padding-top: 40px;
+  padding-bottom: 20px;
   height: 100vh;
 }
 section h5 {
@@ -54,8 +55,35 @@ section h2 span {
   background: linear-gradient(to right, #f5d837, #bbb812);
   padding: 10px 55px;
   color: darkblue;
+
   border-radius: 10px;
 }
+h2 {
+  padding-bottom: 40px;
+}
+.carousel {
+  background: #eee;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8c8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
 @media screen and (max-width: 700px) {
   nav {
     flex-direction: column;

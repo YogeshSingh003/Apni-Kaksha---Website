@@ -22,6 +22,10 @@
       href="logo/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <link rel="stylesheet" href="Styles/style.css" />
   </head>
 
@@ -41,6 +45,13 @@
     <main>
       <section>
         <h2><span> Courses </span></h2>
+        <div class="carousel" data-flickity='{ "wrapAround": true }'>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+        </div>
       </section>
       <section>
         <h2><span> College Reviews</span></h2>
@@ -111,5 +122,6 @@
       <a href="#">Refund Policy</a>
       <a href="#" class="copyright">&copy; 2020 | Apni Kaksha</a>
     </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
 </html>
