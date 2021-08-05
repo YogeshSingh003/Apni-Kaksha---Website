@@ -19,20 +19,26 @@ header {
   background-color: black;
 }
 
-nav a {
+nav a,
+footer a {
   padding: 14px 20px;
   color: white;
   display: block;
   float: left;
   text-decoration: none;
 }
-nav {
+nav,
+footer {
   background-color: #333;
   overflow: hidden;
 }
 nav a:hover {
   background-color: wheat;
   color: black;
+}
+.login,
+.copyright {
+  float: right;
 }
 section {
   text-align: center;
