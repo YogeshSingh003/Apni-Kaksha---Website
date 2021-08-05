@@ -14,6 +14,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 50%;
+  background-attachment: fixed;
 }
 header {
   background-color: black;
@@ -26,11 +27,12 @@ footer a {
   display: block;
   float: left;
   text-decoration: none;
+  text-align: center;
 }
 nav,
 footer {
   background-color: #333;
-  overflow: hidden;
+  display: flex;
 }
 nav a:hover {
   background-color: wheat;
@@ -38,7 +40,7 @@ nav a:hover {
 }
 .login,
 .copyright {
-  float: right;
+  margin-left: auto;
 }
 section {
   text-align: center;
@@ -47,4 +49,19 @@ section {
 }
 section h5 {
   margin: 0px 130px;
+}
+section h2 span {
+  background: linear-gradient(to right, #f5d837, #bbb812);
+  padding: 10px 55px;
+  color: darkblue;
+  border-radius: 10px;
+}
+@media screen and (max-width: 700px) {
+  nav {
+    flex-direction: column;
+  }
+  .copyright,
+  .login {
+    margin-left: 0;
+  }
 }
