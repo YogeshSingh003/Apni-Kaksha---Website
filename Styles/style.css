@@ -46,7 +46,8 @@ section {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 20px;
-  height: 100vh;
+  min-height: 40vh;
+  height: 100%;
 }
 section h5 {
   margin: 0px 130px;
